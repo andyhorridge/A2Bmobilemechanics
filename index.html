@@ -1,32 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Car Logos</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>A to B Mobile Mechanics</title>
   <style>
     body {
-      background-color: #111;
-      color: #fff;
-      font-family: 'Segoe UI', sans-serif;
-      text-align: center;
-      padding: 2rem;
+      margin: 0;
+      background-color: #1c1c1c;
     }
-    img {
-      width: 200px;
+
+    .hero {
+      width: 100%;
+      display: block;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      gap: 20px;
+      flex-wrap: wrap;
+      background-color: #111;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
       height: auto;
-      margin: 1.5rem;
-      background-color: #fff;
-      border-radius: 12px;
-      padding: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      border-radius: 5px;
+    }
+
+    @media (max-width: 900px) {
+      .gallery {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Car Logos</h1>
-  <img src="Mercedes.png" alt="Mercedes Logo">
-  <img src="Nissan.png" alt="Nissan Logo">
-  <img src="Westfield.png" alt="Westfield Logo">
+
+  <img class="hero" src="a2blogo.jpg" alt="A to B Logo" />
+
+  <div class="gallery">
+    <img src="Mercedes.png" alt="Mercedes">
+    <img src="Nissan.png" alt="Nissan">
+    <img src="Westfield.png" alt="Westfield">
+  </div>
+
 </body>
 </html>
